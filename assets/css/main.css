@@ -1,0 +1,138 @@
+/* Gradient code by Manuel Pinto: https://codepen.io/P1N2O/pen/pyBNzX */
+body {
+    width: 100wh;
+    height: 90vh;
+    color: #fff;
+    background-color: black;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    user-select: none;
+    -webkit-app-region: drag;
+    cursor: default;
+}
+
+.text {
+    -webkit-app-region: no-drag;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.img {
+	width: 128px;
+	height: 128px;
+	transition: width 0.5s, height 0.5s;
+}
+.img:hover {
+	width: 140px;
+	height: 140px;
+}
+
+#background {
+    /*background-image: url('https://hdwallsource.com/img/2014/9/anime-winter-wallpapers-42568-43577-hd-wallpapers.jpg');*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(3px) brightness(50%);
+}
+
+#title-bar {
+    height: 24px;
+    padding: none;
+    margin: 0px;
+}
+
+#title-bar-btns {
+    -webkit-app-region: no-drag;
+    position: fixed;
+    top: 0px;
+    right: 6px;
+}
+
+button {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline: none;
+    color: white;
+}
+
+img {
+    border-radius: 50%;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('../font/montserrat-v12-latin-regular.woff2') format('woff2')
+}
+
+  /*!
+   * animate.css -http://daneden.me/animate
+   * Version - 3.7.0
+   * Licensed under the MIT license - http://opensource.org/licenses/MIT
+   *
+   * Copyright (c) 2018 Daniel Eden
+   */
+
+@keyframes fadeInDownBig {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -2000px, 0);
+        transform: translate3d(0, -2000px, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+.fadeInDownBig {
+    animation-name: fadeInDownBig;
+}
+
+.animated {
+    animation-duration: 0.7s;
+    animation-fill-mode: both;
+}
+
+.animated2 {
+    animation-duration: 1.7s;
+    animation-fill-mode: both;
+}
+
+.animated3 {
+    animation-duration: 2.7s;
+    animation-fill-mode: both;
+}
+
+a {
+	margin: 10px;
+	text-decoration: none;
+	color: white;
+}

@@ -1,0 +1,12 @@
+{
+  "name": "qtradio-desktop",
+  "description": "Desktop app for qtradio.moe",
+  "author": "qtradio dev team <contact@qtradio.moe> (https://qtradio.moe)",
+  "version": "0.0.1",
+  "repository": "https://git.derpyenterprises.org/qtradio.moe/Desktop",
+  "homepage": "https://qtradio.moe",
+  "dependencies": {
+    "discord-rpc": "3.0.1",
+    "node-notifier": "5.3.0"
+  }
+}

@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>desktop | qtradio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <link href="../assets/css/main.css" rel="stylesheet">
+  </head>
+ <body>
+    <div id="title-bar">
+        <div id="title-bar-btns">
+            <button class="button" id="min-btn">➖</button>
+            <button class="button" id="max-btn">➕</button>
+            <button class="button" id="close-btn">✖️</button>
+        </div>
+	</div>	
+   <div id="background"></div>
+  <center>
+    <img class='animated fadeInDownBig text img' draggable="false" src="../assets/img/icon.webp">
+    <h1 id='e' class='animated fadeInDownBig text'>Qt Radio</h1>
+    <h2 class='animated2 fadeInDownBig text'>24/7 online radio with anime songs, VOCALOID and more!</h2>
+    <audio class='animated3 fadeIn text' id="videoElement"></audio>
+    <a href='javascript:RcpToPlay()' class='animated3 fadeIn text' draggable="false" href="#" id="audioControl" style="text-decoration: none; color: #FFFF;">Play</a><br>
+    <a class='animated3 fadeIn text' draggable="false">Now Playing: <a draggable="false" id="nowPlaying"></a><br>
+	<a class='animated3 fadeIn text' draggable="false" href="javascript:openOptions()" style="text-decoration: none; color: #FFFF;">Options</a><br>
+    <h4 class='animated3 fadeIn text'>Created with 💜 by qtradio dev team and contributors!</h4>
+  </center>
+
+  <script src="../assets/js/flv.min.js"></script>
+  <script src="../assets/js/misc.js"></script>
+  <script src='../assets/js/rpc.js'></script>
+  <script src='../assets/js/titlebar.js'></script>
+	<script src='../assets/js/option.js'></script>
+  
+  <script>
+    if (flvjs.isSupported()) {
+      let videoElement = document.getElementById('videoElement');
+      let flvPlayer = flvjs.createPlayer({
+          type: 'flv',
+          url: 'ws://srgg.de:1244/live/STREAM_NAME.flv'
+      });
+      flvPlayer.attachMediaElement(videoElement);
+      flvPlayer.load();
+  }
+  </script>
+ </body>
+</html>

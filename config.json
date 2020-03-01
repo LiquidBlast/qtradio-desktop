@@ -1,0 +1,5 @@
+{
+  "rpc": true,
+  "notifier": true,
+  "tray": true
+}

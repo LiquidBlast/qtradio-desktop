@@ -1,0 +1,8 @@
+/*!
+   * animate.css -https://daneden.me/animate
+   * Version - 3.7.0
+   * Licensed under the MIT license - https://opensource.org/licenses/MIT
+   *
+   * Copyright (c) 2018 Daniel Eden
+   * Modified by ohlookitsderpy
+*/@keyframes fadeInDownBig{from{opacity:0;-webkit-transform:translate3d(0,-2000px,0);transform:translate3d(0,-2000px,0)}to{opacity:1;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}.fadeIn{animation-name:fadeIn}.fadeInDownBig{animation-name:fadeInDownBig}.animated{animation-duration:.7s;animation-fill-mode:both}.animated2{animation-duration:1.7s;animation-fill-mode:both}.animated3{animation-duration:2.7s;animation-fill-mode:both}

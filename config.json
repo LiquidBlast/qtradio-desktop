@@ -1,0 +1,26 @@
+{
+  "notifier": true,
+  "tray": true,
+  "winSize": {
+    "about": {
+      "width": 400,
+      "height": 480
+    },
+    "options": {
+      "width": 400,
+      "height": 400
+    },
+    "default": {
+      "width": 800,
+      "height": 600
+    }
+  },
+  "rpc": {
+    "enabled": true,
+    "clientId": "504360789038333963"
+  },
+  "server": {
+    "enabled": true,
+    "port": 3939
+  }
+}
